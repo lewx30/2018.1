@@ -1,0 +1,28 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>English Writing Practices's Blog</title>
+	<link href="https://lewx30.github.io/2018.1/blog/atom.xml" rel="self"/>
+	<link href="https://lewx30.github.io/2018.1/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>https://lewx30.github.io/2018.1/blog</id>
+	
+  <author>
+		<name>Wisley Vilela</name>
+		<email>lewx30@gmail.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="https://lewx30.github.io/2018.1{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>https://lewx30.github.io/2018.1{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
