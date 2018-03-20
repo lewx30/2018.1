@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Hank Quinlan, Horrible Cop, Launches Site"
+date: 2014-04-30
+---
+
+Well. Finally got around to putting this old website together. <br />Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts.<br /> It actually is a lot easier than I thought it was going to be.
+<p>Make a _posts/ directory where we'll store our blog posts. Inside that folder will be our first post. Jekyll is very strict with how these files are named, so pay attention. It must follow the convention YYYY-MM-DD-title-of-my-post.md. This file name gets translated into the permalink for the blog post. So in this example, we'll create a file named 2014-04-30-hank-quinlan-site-launched.md:
+<p>
+Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Note the file extension .md stands for Markdown, and the Markdown syntax used inside the file gets converted to HTML by Jekyll. Like Wikitext, Markdown is a markup language with a syntax closer to plain text. The idea of Markdown is to get out of the author's way so they can write their HTML content quickly, making Markdown very suitable as a blog authoring syntax. If you aren't already, you'll want to get familiar with Markdown syntax, and this printable cheatsheet (PDF) will be your best friend.</p>
+
+<p>After committing the new post, navigate to http://username.github.io/YYYY/MM/DD/name-of-your-post to view it.</p>
+<p>
+All this is great, but your readers won't always know the exact URLs of your posts. So next we need to create a page on our site that lists each post's title and hyperlink. You could create this list on your homepage or alternatively, create a blog subpage that collects all of your posts. We're going to do the latter.
+</p>
